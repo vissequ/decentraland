@@ -1,3 +1,5 @@
+// None of the video links in here work anymore, you will need to host your own CORS enabled video files. I recommend Vimeo's pro plan or whatever it is.
+
 //Video Screen
 
 // #1
