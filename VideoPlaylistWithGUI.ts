@@ -1,5 +1,14 @@
 // None of the video links in here work anymore, you will need to host your own CORS enabled video files. I recommend Vimeo's pro plan or whatever it is.
 
+const _scene = new Entity('_scene')
+engine.addEntity(_scene)
+const transform = new Transform({
+  position: new Vector3(0, 0, 0),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+_scene.addComponentOrReplace(transform)
+
 //Video Screen
 
 // #1
