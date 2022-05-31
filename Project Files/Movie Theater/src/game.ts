@@ -1,3 +1,5 @@
+//Please contact vissequ#1301 on Discord if you require a scripter.
+
 import { createChannel } from '../node_modules/decentraland-builder-scripts/channel'
 import { createInventory } from '../node_modules/decentraland-builder-scripts/inventory'
 import Script1 from "../7d669c08-c354-45e4-b3a3-c915c8fd6b6e/src/item"
@@ -642,7 +644,7 @@ concreteWall9.addComponentOrReplace(transform53)
 
 
 //screen
-//the variable floorBlack2 is actually the screen. sorry for any confusing, but it was originally a black floor part which I put a screen on.
+//the variable floorBlack2 is actually the screen. sorry for any confusion, but it was originally a black floor part which I put a screen on.
 
 const floorBlack2 = new Entity('floorBlack2')
 engine.addEntity(floorBlack2)
