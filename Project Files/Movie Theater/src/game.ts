@@ -640,7 +640,10 @@ concreteWall9.addComponentOrReplace(transform53)
 // })
 // blueButton2.addComponentOrReplace(transform55)
 
+
 //screen
+//the variable floorBlack2 is actually the screen. sorry for any confusing, but it was originally a black floor part which I put a screen on.
+
 const floorBlack2 = new Entity('floorBlack2')
 engine.addEntity(floorBlack2)
 floorBlack2.setParent(_scene)
