@@ -1,8 +1,14 @@
-//This is a modified script from the DCL Beer Dispenser repo to add some animations and sound effects. You'll need to edit your scene.json to add:
+//This is a modified script from the DCL Beer Dispenser repo:
+//https://github.com/decentraland-scenes/beer-dispenser
+
+//You'll need to edit your scene.json to add:
 
 //  "requiredPermissions": [
 //    "ALLOW_TO_TRIGGER_AVATAR_EMOTE"
 // ],
+
+//A random animation is played when drinking, the beer position is now near the hands, and a burp sound has been coded.
+//Burp Sound not included. Please drink responsibly.
 
 import * as utils from '@dcl/ecs-scene-utils'
 import { CreateSound } from './sound'
@@ -109,12 +115,6 @@ export function CreateBeerGlass(
 //return glass
 }
 
-// text
-
-//const myEntity = new Entity()
-//const myText = new TextShape("Hello World!")
-//myEntity.addComponent(myText)
-
 // drink
 
 
@@ -183,13 +183,11 @@ sceneMessageBus.on('BeerGlassDrink', (data: { id: string }) => {
     new utils.Delay(3500, () => {
       burpSound.getComponent(AudioSource).playOnce()
       //let indexNumber = Math.random(0,1)
-      //random numbers in javascript is hard lol
       triggerEmote({ predefined: postDrinkEmotes[randomInt] })
       
     })
   )
   
-  //log("test")
 
 })
 
